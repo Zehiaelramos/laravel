@@ -13,7 +13,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+      $this->app->bind('path.public',function(){
+        return'/home/u136258067/domains/awplen.com/public_html';
+      });
     }
 
     /**
